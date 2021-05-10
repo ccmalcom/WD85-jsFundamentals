@@ -35,15 +35,15 @@ console.log(sum3);
     Print that variable
 */
 
-function tipCalculator(price){
-    let tip = (price * .2);
-    return tip;
-}
+// function tipCalculator(price){
+//     let tip = (price * .2);
+//     return tip;
+// }
 
-let thisTip = tipCalculator(20)
-console.log(thisTip);
+// let thisTip = tipCalculator(20)
+// console.log(thisTip);
 
-tipCalculator(20) // ? why doesn't this work?
+// tipCalculator(20) // ? why doesn't this work?
 
 // let check = (bill, tip) =>{
 //     let tipAmount = bill * tip;
@@ -54,8 +54,16 @@ tipCalculator(20) // ? why doesn't this work?
 // let payment = check(20, .2);
 // console.log(payment);
 
-function tipCal(price * tipPercent){
-    let 
+function tipCalculator(billTotal){
+    // let tip = ()
+    
+    // let billTotal  <--- !!No bueno
+    let tipAmount = (billTotal * .2);
+    return tipAmount
 }
+
+
+console.log(tipCalculator(20));
+
 
 
