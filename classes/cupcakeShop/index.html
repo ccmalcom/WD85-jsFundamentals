@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cupcake Palace</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color:rgb(176, 224, 252)
+        }
+        #head{
+            height: 10vh;
+            width: 100vw;
+            text-align: center;
+            padding-top: .75rem; 
+            background-color: plum;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="head">
+        <h1>Let's Sell Cupcakes!</h1>
+    </div>
+    <!-- ADD STORE -->
+    <form action="" style="margin: 2em" id="addStoreForm">
+        <input autocomplete="off" type="text" name="storeName" id="storeName" placeholder="location"></input>
+        <button type="submit">Add Store</button>
+    </form>
+    <!-- ADD INVENTORY -->
+    <form action="" style="margin: 2em" id="addInventoryForm">
+        <select name="Select Store" id="storeArr" required >
+            <option value="" disabled selected>Select Store</option>
+        </select>
+        <input autocomplete="off" type="number" name="qty" placeholder="Quantity" id="qty" required>
+        <input autocomplete="off" type="text" name="batter" placeholder="Batter Type" id="batter" required>
+        <input autocomplete="off" type="text" name="icing" placeholder="Icing" id="icing">
+        <input autocomplete="off" type="number" name="cost" placeholder="price per" id="number" required>
+        <button type="submit">Add to Inventory</button>
+    </form>
+    <!-- DISPLAY INFO -->
+    <div id='displayStore' style="margin: 2em;">
+    </div>
+    <script src="./index.js"></script>
+    <script src="./scripts.js"></script>
+</body>
+</html>
